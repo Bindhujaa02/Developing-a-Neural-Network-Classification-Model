@@ -1,8 +1,8 @@
 # Developing a Neural Network Classification Model
 
-### Name: SAJEN MURALI
+### Name: Bindhujaa S
 
-### Register Number: 212223220089
+### Register Number: 212224230038
 
 ## AIM
 To develop a neural network classification model for the given dataset.
@@ -147,8 +147,8 @@ with torch.no_grad():
 accuracy = accuracy_score(actuals, predictions)
 conf_matrix = confusion_matrix(actuals, predictions)
 class_report = classification_report(actuals, predictions, target_names=[str(i) for i in label_encoder.classes_])
-print("Name:  SAJEN MURALI")
-print("Register No:   212223220089")
+print("Name:  Bindhujaa S")
+print("Register No:   212224230038")
 print(f'Test Accuracy: {accuracy:.2f}%')
 print("Confusion Matrix:\n", conf_matrix)
 print("Classification Report:\n", class_report)
@@ -168,32 +168,39 @@ with torch.no_grad():
     # Select the prediction for the sample (first element)
     predicted_class_index = torch.argmax(output[0]).item()
     predicted_class_label = label_encoder.inverse_transform([predicted_class_index])[0]
-print("Name:   SAJEN MURALI")
-print("Register No:  212223220089")
+print("Name:  Bindhujaa S")
+print("Register No:  212224230038")
 print(f'Predicted class for sample input: {predicted_class_label}')
 print(f'Actual class for sample input: {label_encoder.inverse_transform([y_test[12].item()])[0]}')
 
 ```
 
 ### Dataset Information
-<img width="1020" height="577" alt="image" src="https://github.com/user-attachments/assets/ea4fe387-1ae5-49f0-9bc3-e53410d4529e" />
+
+<img width="1566" height="283" alt="590928888-6b3be4b0-5e7b-4e6e-8878-0da0406aee63" src="https://github.com/user-attachments/assets/7a16dd16-59bc-4366-a46c-4992f2c62c1b" />
+
+
 
 
 ### OUTPUT
+<img width="468" height="311" alt="590929071-9fc01a7a-b3a8-45ed-8db5-5cfbe20206a2" src="https://github.com/user-attachments/assets/93de16ba-9f85-4b7f-8865-0e0d01993941" />
+
 
 ## Confusion Matrix
 
-<img width="764" height="561" alt="image" src="https://github.com/user-attachments/assets/2335f969-fb0d-4427-8640-745ef2a0b1be" />
+<img width="863" height="725" alt="590929511-333f7a27-fe83-4b0c-a47e-ddc08e15a7a2" src="https://github.com/user-attachments/assets/75606ef5-a96d-4718-8cd7-1d7fd55f863e" />
+
 
 
 
 ## Classification Report
-<img width="645" height="438" alt="image" src="https://github.com/user-attachments/assets/17a8908e-ce73-4930-8377-6db256d0eab9" />
+<img width="746" height="435" alt="image" src="https://github.com/user-attachments/assets/9545f6a2-48d7-4521-9fdb-3e3d8293412e" />
+
 
 
 
 ### New Sample Data Prediction
-<img width="394" height="101" alt="image" src="https://github.com/user-attachments/assets/251f26a4-bb9c-4127-a9e9-efec735451e2" />
+<img width="626" height="106" alt="image" src="https://github.com/user-attachments/assets/c5361c53-379a-4894-9a45-5d2c1c54ba0c" />
 
 
 
